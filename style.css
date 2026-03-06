@@ -56,6 +56,13 @@ body{
 
     opacity: 1;
 }
+
+
+.hidden{
+    display: none;
+}
+
+
 .overlay{
     width: 100vw;
     height: 100vh;

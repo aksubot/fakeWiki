@@ -33,5 +33,11 @@ btns.forEach((btn, index) => {
 });
 
 
+const cards = document.querySelectorAll('.hidden');
+const btn = document.querySelector('.btn');
 
-
+btn.addEventListener('click', () => {
+    cards.forEach(card => {
+        card.classList.toggle('hidden');
+    });
+})
