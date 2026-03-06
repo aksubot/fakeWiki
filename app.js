@@ -45,8 +45,8 @@ btn.forEach((button, index) => {
         cards[index].classList.toggle('hidden');
         var rect = button.getBoundingClientRect();
 
-        cards[index].style.left = rect.left + 'px';
-        cards[index].style.top = rect.top / 2 + 'px';
+        cards[index].style.left = rect.left - 20 + 'px';
+        cards[index].style.top = rect.top - 110 + 'px';
 
 
     });
