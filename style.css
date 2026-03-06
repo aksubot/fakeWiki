@@ -68,7 +68,6 @@ body{
     z-index: 100;
 }
 .overlay-is-active{
-    opacity: 0.3;
     display: block;
 }
 
@@ -150,6 +149,12 @@ a:visited { text-decoration: none; }
 a:hover { text-decoration: none; }
 a:active { text-decoration: none; }
 
+.kysymysCont p{
+    font-family: sans-serif;
+    color: #000;
+    font-size: 14px;
+    padding: 10px 0;
+}
 
 .navbar__menu.active{
     left: -1px;

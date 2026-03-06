@@ -31,3 +31,4 @@ btns.forEach((btn, index) => {
         arrows[index].classList.toggle('rotate');
     })
 });
+
