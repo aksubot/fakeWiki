@@ -34,10 +34,20 @@ btns.forEach((btn, index) => {
 
 
 const cards = document.querySelectorAll('.hidden');
-const btn = document.querySelector('.btn');
+const btn = document.querySelectorAll('.btn');
 
-btn.addEventListener('click', () => {
-    cards.forEach(card => {
-        card.classList.toggle('hidden');
+let x = 0;
+let y = 0;
+
+
+btn.forEach((button, index) => {
+    button.addEventListener('click', () => {
+        cards[index].classList.toggle('hidden');
+        var rect = button.getBoundingClientRect();
+
+        cards[index].style.left = rect.left + 'px';
+        cards[index].style.top = rect.top / 2 + 'px';
+
+
     });
 })
